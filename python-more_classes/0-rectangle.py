@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Rectangle module defines a class for a rectangle with width and height."""
+"""This module defines a Rectangle class with width and height validation."""
 
 
 class Rectangle:
-    """Defines a rectangle with private width and height attributes."""
+    """Defines a rectangle with width and height."""
 
     def __init__(self, width=0, height=0):
         self.width = width
@@ -11,12 +11,12 @@ class Rectangle:
 
     @property
     def width(self):
-        """Getter for the width."""
+        """Retrieve the width of the rectangle."""
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Setter for the width with validation."""
+        """Set the width with validation."""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -25,12 +25,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """Getter for the height."""
+        """Retrieve the height of the rectangle."""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Setter for the height with validation."""
+        """Set the height with validation."""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
