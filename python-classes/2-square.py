@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""This module defines a Square class for representing squares."""
+
 class Square:
     """Defines a square."""
 
@@ -8,7 +10,7 @@ class Square:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
-        self.__size = size  # private instance attribute
+        self.__size = size
 
     def area(self):
         """Return the area of the square."""
