@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""This module defines a Square class that can compute area and print itself using '#' characters."""
+"""This module defines a Square class that can compute area and
+print itself using '#' characters.
+"""
 
 
 class Square:
